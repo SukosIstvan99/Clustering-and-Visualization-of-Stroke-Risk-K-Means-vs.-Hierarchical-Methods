@@ -36,7 +36,7 @@ print("Stroke esély életkori kategóriánként (futás közben):\n")
 age_groups = df.groupby('age_category')
 
 for age_category, group in age_groups:
-    stroke_rate = group['stroke'].mean() * 100  # százalékos arány
+    stroke_rate = group['stroke'].mean() * 100  
     print(f"Korosztály: {age_category}, Stroke esély: {stroke_rate:.2f}%")
 
 plt.figure(figsize=(10, 6))
